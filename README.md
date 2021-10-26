@@ -26,4 +26,4 @@ The web application has been deployed on AWS to EC2 instances set up in an autos
 
 - Custom Domain Name Servers were created on Namecheap and the AWS NS record was copied and added as part of the Custom Domain Name Servers.
 
-- **CNAME** records and **A** records were created on Route 53 for proper routing to the purchased domain.
+- **CNAME** records and **A** records were created on Route 53 for proper routing from the load balancer to the purchased domain.
