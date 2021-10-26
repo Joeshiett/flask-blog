@@ -8,6 +8,8 @@ The web application has been deployed on AWS to EC2 instances set up in an autos
 
 ![](images/FlaskblogAwsArchitecture.png)
 Before each EC2 instance was created and configured to serve the web application:
-- An AMI image was created. This AMI image contains the dependencies that the Flask application would require. Such as Nginx, Gunicorn etc.
-- A launch template was created as well specifying the type of instances to be created and deployed using the AMI image created above.
-- An autoscaling group was created with the launch template included. 
+- An **AMI image** was created. This AMI image contains the dependencies that the Flask application would require. Such as Nginx, Gunicorn etc.
+- A **launch template** was created as well specifying the type of instances to be created and deployed using the AMI image created above.
+- An **autoscaling group** was created with the launch template included. 
+- A **security group** was created in the default VPC. Different ports were opened to allow access for the different protocols (HTTP, TCP, HTTPS).
+- 
