@@ -11,5 +11,6 @@ Before each EC2 instance was created and configured to serve the web application
 - An **AMI image** was created. This AMI image contains the dependencies that the Flask application would require. Such as Nginx, Gunicorn etc.
 - A **launch template** was created as well specifying the type of instances to be created and deployed using the AMI image created above.
 - An **autoscaling group** was created with the launch template included. 
-- A **security group** was created in the default VPC. Different ports were opened to allow access for the different protocols (HTTP, TCP, HTTPS).
-- 
+- A **security group** was created in the default VPC. Different ports were exposed to allow access for the different protocols (HTTP, TCP and HTTPS).
+- - A **target group** was created and the two instances created with the launch template were included in the **registered templates**.
+- An **Application Load Balancer** was created and linked to the target group and the **listeners** for each protocol were setup. 
