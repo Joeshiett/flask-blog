@@ -12,5 +12,8 @@ Before each EC2 instance was created and configured to serve the web application
 - A **launch template** was created as well specifying the type of instances to be created and deployed using the AMI image created above.
 - An **autoscaling group** was created with the launch template included. 
 - A **security group** was created in the default VPC. Different ports were exposed to allow access for the different protocols (HTTP, TCP and HTTPS).
-- - A **target group** was created and the two instances created with the launch template were included in the **registered templates**.
-- An **Application Load Balancer** was created and linked to the target group and the **listeners** for each protocol were setup. 
+- A **target group** was created and the two instances created with the launch template were included in the **registered templates**.
+- An **Application Load Balancer** was created and linked to the target group and the **listeners** for each protocol (HTTP and HTTPS) were setup with the necessary **security policy** and **SSL certificate**.
+- A free **public SSL certificate** was acquired from the ACM (Amazon Certificate Manager).
+- A domain name was acquired from **Namecheap** and added to Hosted Zones in **Route 53**. 
+- A custom Domain Name Server was created on Namecheap and the 
