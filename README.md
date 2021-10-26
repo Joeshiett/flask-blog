@@ -31,4 +31,4 @@ The web application has been deployed on AWS to EC2 instances set up in an autos
 ## How can I thank you?
 Why not star the Github repo? I'd for sure love the attention! You could as well share the link for this repository on Twitter, Hackernews or Destructoid? Spread the word!
 
-Don't forget to follow me on [twitter](https://twitter.com/eshiettjoseph). Also, you could see other things I do in the software enviroment via my [website](https://joeshiett.github.io/)
+Don't forget to follow me on [twitter](https://twitter.com/eshiettjoseph). 
