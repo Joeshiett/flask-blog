@@ -16,4 +16,5 @@ Before each EC2 instance was created and configured to serve the web application
 - An **Application Load Balancer** was created and linked to the target group and the **listeners** for each protocol (HTTP and HTTPS) were setup with the necessary **security policy** and **SSL certificate**.
 - A free **public SSL certificate** was acquired from the ACM (Amazon Certificate Manager).
 - A domain name was acquired from **Namecheap** and added to Hosted Zones in **Route 53**. 
-- A custom Domain Name Server was created on Namecheap and the 
+- Custom Domain Name Servers were created on Namecheap and the AWS NS record was copied and added as part of the Custom Domain Name Servers.
+- **CNAME** records and **A** records were created on Route 53 for proper routing to the purchased domain.
